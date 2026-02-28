@@ -94,27 +94,6 @@ nav ul li a:hover {
   100% { transform: translateY(0px); }
 }
 
-/* Ondas animadas */
-.wave {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 120px;
-  background: url('https://i.imgur.com/8KpZK0R.png');
-  background-size: 1000px 120px;
-  animation: wave 6s infinite linear;
-}
-
-.wave.wave2 {
-  opacity: 0.5;
-  animation-duration: 10s;
-}
-
-@keyframes wave {
-  0% { background-position-x: 0; }
-  100% { background-position-x: 1000px; }
-}
-
 /* ------------------ SECCIONES ------------------ */
 section {
   padding: 110px 40px;
@@ -183,4 +162,5 @@ footer {
   text-align: center;
   margin-top: 40px;
   backdrop-filter: blur(10px);
+
 }
