@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +13,23 @@
 <!-- ------------------ NAVBAR ------------------ -->
 <nav>
     <img src="https://i.postimg.cc/PJ4B3KzH/image.png" height="100" alt="logo">
-  <div class="logo">El Escondite Azul</div>
-  <ul>
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#galeria">Galería</a></li>
-    <li><a href="#ubicacion">Ubicación</a></li>
-    <li><a href="#contacto">Contáctanos</a></li>
-    <li><a href="#reservacion">Reservación</a></li>
-  </ul>
+
+    <div class="logo">El Escondite Azul</div>
+
+    <!-- CORREGIDO: hamburguer → hamburger -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+        <li><a href="#reservacion">Reservación</a></li>
+    </ul>
 </nav>
 
 <!-- ------------------ HERO ------------------ -->
@@ -39,19 +48,21 @@
     <h2>Galería</h2>
     <br>
     <div class="gallery">
-    <img src="./media/WhatsApp Image 2026-02-20 at 6.48.08 PM.jpeg">
-    <img src="./media/WhatsApp Image 2026-02-20 at 6.44.47 PM (1).jpeg">
-    <img src="./media/WhatsApp Image 2026-02-20 at 6.46.38 PM (2).jpeg">
-    <img src="./media/WhatsApp Image 2026-02-20 at 6.44.47 PM.jpeg">
-    <img src="./media/WhatsApp Image 2026-02-20 at 6.46.37 PM (3).jpeg">
+        <img src="./media/WhatsApp Image 2026-02-20 at 6.48.08 PM.jpeg">
+        <img src="./media/WhatsApp Image 2026-02-20 at 6.44.47 PM (1).jpeg">
+        <img src="./media/WhatsApp Image 2026-02-20 at 6.46.38 PM (2).jpeg">
+        <img src="./media/WhatsApp Image 2026-02-20 at 6.44.47 PM.jpeg">
+        <img src="./media/WhatsApp Image 2026-02-20 at 6.46.37 PM (3).jpeg">
     </div>
 </section>
+
 <!-- ------------------ UBICACIÓN ------------------ -->
 <section id="ubicacion">
   <h2>Ubicación</h2>
   <p>Nos encontramos en un hermoso valle rodeado de naturaleza.</p>
   <br>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.619574605958!2d-90.47321782483857!3d15.076321985468404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858a285fb0e98b7d%3A0x1a5ec3520a4651fc!2sEscuela%20Rural%20Publica%20Chiticoy!5e1!3m2!1sen!2sus!4v1772260711896!5m2!1sen!2sus" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.619574605958!2d-90.47321782483857!3d15.076321985468404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858a285fb0e98b7d%3A0x1a5ec3520a4651fc!2sEscuela%20Rural%20Publica%20Chiticoy!5e1!3m2!1sen!2sus!4v1772260711896!5m2!1sen!2sus"
+    width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 
 <!-- ------------------ CONTACTO ------------------ -->
@@ -59,9 +70,7 @@
   <h2>Contáctanos</h2>
   <p>Correo: info@aquablue.com</p>
   <br>
-  <a href="tel:+50236761032">
-    📞 Llámanos ahora!
-</a>
+  <a href="tel:+50236761032">📞 Llámanos ahora!</a>
 </section>
 
 <!-- ------------------ RESERVACIÓN ------------------ -->
@@ -69,9 +78,7 @@
   <h2>Reservación</h2>
   <p>No te quedes con las ganas de ese chapuzón, haz tu reservación ahora mismo.</p>
   <br>
-  <a href="tel:+50236761032">
-    📞 +502 3676 1032
-</a>
+  <a href="tel:+50236761032">📞 +502 3676 1032</a>
 </section>
 
 <!-- ------------------ FOOTER ------------------ -->
@@ -79,6 +86,8 @@
   © 2026 El Escondite Azul | Merendero y Piscinas
 </footer>
 
-</body>
+<!-- JS AL FINAL (CORREGIDO) -->
+<script src="./script.js"></script>
 
+</body>
 </html>
