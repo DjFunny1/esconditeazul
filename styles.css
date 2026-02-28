@@ -1,0 +1,186 @@
+/* ------------------ ESTILOS GENERALES ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background: linear-gradient(135deg, #4cc9f0, #4361ee); */
+    background-image: linear-gradient( 111.4deg,  rgba(37,84,199,1) 0.1%, rgba(47,111,173,1) 24.4%, rgba(100,166,227,1) 52.2%, rgba(135,206,235,1) 77.9%, rgba(125,249,255,1) 100% );  color: white;
+    overflow-x: hidden;
+}
+
+/* ------------------ NAVBAR ------------------ */
+nav {
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* text-align: center; */
+  backdrop-filter: blur(10px);
+  background: rgba(0, 42, 255, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+nav .logo {
+  font-size: 2.2rem;
+  text-shadow: rgb(0, 45, 105) 0px 0px 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+nav ul {
+    position: fixed;
+    right: 20px;
+    display: flex;
+    margin-right: 20px;
+    gap: 30px;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(213, 241, 255);
+  text-shadow: rgb(0, 45, 105) 0px 0px 5px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ff91;
+  text-shadow: #009cf6 0px 0px 13px;
+  text-decoration: underline;
+}
+
+/* ------------------ HERO ------------------ */
+.hero {
+    background-image: url('https://i.postimg.cc/13z5h7tX/Whats-App-Image-2026-02-20-at-6-47-08-PM.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 20px rgba(172, 241, 255, 0.838);
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero p {
+    text-shadow: rgb(0, 45, 105) 0px 0px 5px;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+/* Animación flotante */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Ondas animadas */
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background: url('https://i.imgur.com/8KpZK0R.png');
+  background-size: 1000px 120px;
+  animation: wave 6s infinite linear;
+}
+
+.wave.wave2 {
+  opacity: 0.5;
+  animation-duration: 10s;
+}
+
+@keyframes wave {
+  0% { background-position-x: 0; }
+  100% { background-position-x: 1000px; }
+}
+
+/* ------------------ SECCIONES ------------------ */
+section {
+  padding: 110px 40px;
+  text-align: center;
+}
+section p {
+        text-shadow: rgb(0, 45, 105) 0px 0px 5px;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+section a {
+    text-shadow: rgb(114, 167, 236) 0px 0px 5px;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    margin-top: 15px;
+    opacity: 0.9;
+    text-decoration: none;
+}
+section a:hover {
+    color: #00d3fd;
+    text-shadow: #00283f 0px 0px 13px;
+    text-decoration: none;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+h2:hover {
+      color: #00ff91;
+  text-shadow: #009cf6 0px 0px 13px;
+  text-decoration: underline;
+}
+
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+#ubicacion iframe {
+    margin-top: 5px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  backdrop-filter: blur(10px);
+}
